@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marius Ceban | Portfolio</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="top-divider"></div>
+  <div class="left-divider"></div>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-logo" id="logo">MARIUS CEBAN</div>
+
+    <div class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="nav-overlay" id="navOverlay" aria-label="Mobile menu">
+    <a href="#home"></i> Home</a>
+    <a href="#about"></i> About</a>
+    <a href="#skills"></i> Skills</a>
+    <a href="#projects"></i> Projects</a>
+    <a href="#contact"></i> Contact</a>
+  </div>
+
+  <!-- ROADMAP -->
+  <div class="roadmap-sidebar">
+    <div class="roadmap-item" data-target="home"><div class="line"></div><div class="text">Home</div></div>
+    <div class="roadmap-item" data-target="about"><div class="line"></div><div class="text">About</div></div>
+    <div class="roadmap-item" data-target="skills"><div class="line"></div><div class="text">Skills</div></div>
+    <div class="roadmap-item" data-target="projects"><div class="line"></div><div class="text">Projects</div></div>
+    <div class="roadmap-item" data-target="contact"><div class="line"></div><div class="text">Contact</div></div>
+  </div>
+
+  <div class="main-content">
+    <!-- HOME -->
+    <section id="home">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="kicker">Web Developer • UI/UX • Design</div>
+          <img class="hero-avatar" src="./img/me.jpg" alt="Marius Ceban" />
+          <h1><span class="hero-line">Build clean websites</span><br/>with strong visuals.</h1>
+
+          <p class="subtitle">
+            I turn ideas into structured, scalable interfaces: components, spacing systems, and motion that supports usability - not noise.
+          </p>
+
+          <div class="pill-row">
+            <div class="pill">HTML/CSS</div>
+            <div class="pill">JavaScript</div>
+            <div class="pill">Tailwind</div>
+            <div class="pill">Bootstrap</div>
+            <div class="pill">UI/UX</div>
+          </div>
+
+          <div class="actions">
+            <a class="btn primary" href="#projects"><i class="fa-solid fa-grid-2"></i> View Projects</a>
+            <a class="btn" href="#contact"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="kicker">About</div>
+      <h2>About Me</h2>
+      <p class="subtitle">
+        Computer Science student and developer with hands-on experience in software development. Friendly and communicative, used to working in a team. Motivated to grow in web development and UI/UX design.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-topbar">Profile</div>
+          <div class="card-body">
+            <div class="card-title">Student & Developer</div>
+            <div class="card-desc">
+              Third-year Computer Science student (expected to graduate in June). Hands-on experience with projects and teamwork.
+            </div>
+          </div>
+          <hr class="card-divider" />
+          <div class="card-footer">
+            <div class="card-meta"><i class="fa-solid fa-user"></i> About me</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-topbar">Focus</div>
+          <div class="card-body">
+            <div class="card-title">Web + UI/UX</div>
+            <div class="card-desc">
+              Minimal layouts, responsive design, typographic hierarchy, and micro-interactions (including with GSAP).
+            </div>
+          </div>
+          <hr class="card-divider" />
+          <div class="card-footer">
+            <div class="card-meta"><i class="fa-solid fa-pen-nib"></i> Design</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="kicker">Skills</div>
+      <h2>Tech & Design</h2>
+      <p class="subtitle">
+        Programming languages, web stack, and UI/UX fundamentals to build clean, consistent products.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-topbar">Programming</div>
+          <div class="card-body">
+            <div class="card-title">C, C++, C#, Java</div>
+            <div class="card-desc">Strong fundamentals, university projects, and hands-on work experience.</div>
+          </div>
+          <hr class="card-divider" />
+          <div class="card-footer">
+            <div class="card-meta"><i class="fa-solid fa-code"></i> Languages</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-topbar">Web</div>
+          <div class="card-body">
+            <div class="card-title">HTML/CSS • Tailwind • Bootstrap</div>
+            <div class="card-desc">Responsive design, clean components, and strong attention to spacing and typography.</div>
+          </div>
+          <hr class="card-divider" />
+          <div class="card-footer">
+            <div class="card-meta"><i class="fa-solid fa-layer-group"></i> Front-end</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-topbar">Dev &lt; &gt;</div>
+          <div class="card-body">
+            <div class="card-title">JavaScript, Python, SQL</div>
+            <div class="card-desc">Logic, scripting, data handling, and a solid foundation for backend/DB work.</div>
+          </div>
+          <hr class="card-divider" />
+          <div class="card-footer">
+            <div class="card-meta"><i class="fa-solid fa-database"></i> Data</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-topbar">Experience</div>
+          <div class="card-body">
+            <div class="card-title">C++ Developer (6 months)</div>
+            <div class="card-desc">Hands-on software development experience plus freelance web projects.</div>
+          </div>
+          <hr class="card-divider" />
+          <div class="card-footer">
+            <div class="card-meta"><i class="fa-solid fa-briefcase"></i> Work</div>
+            <div class="card-time">6 mo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="kicker">Projects</div>
+      <h2>Selected work</h2>
+      <p class="subtitle">6 projects. On hover the MP4 preview appears.</p>
+
+      <div class="projects-grid">
+        <div class="project" data-video="/videos/project-04.mp4">
+          <video class="project-video" muted playsinline preload="metadata"></video>
+          <div class="project-fade"></div>
+          <div class="project-topbar">
+            <span>Project</span>
+            <span class="project-stage">UI + Motion</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title">UniShare Landing</div>
+            <div class="project-desc">Minimal landing with scroll-driven animation and clean UI.</div>
+            <div class="project-tags">
+              <div class="tag">Tailwind</div><div class="tag">UI</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project" data-video="/videos/project-01.mp4">
+          <video class="project-video" muted playsinline preload="metadata"></video>
+          <div class="project-fade"></div>
+          <div class="project-topbar">
+            <span>Project</span>
+            <span class="project-stage">Flavory</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Flavory</div>
+            <div class="project-desc">Testing for a wine related AI app, with On Scroll Video</div>
+            <div class="project-tags">
+              <div class="tag">JavaScript</div><div class="tag">Responsive</div><div class="tag">Video on Scroll</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project" data-video="/videos/project-02.mp4">
+          <video class="project-video" muted playsinline preload="metadata"></video>
+          <div class="project-fade"></div>
+          <div class="project-topbar">
+            <span>Project</span>
+            <span class="project-stage">UI System</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Doneky Joe Pub</div>
+            <div class="project-desc">Made an intereactive and unique design for a Pub located in Ravenna</div>
+            <div class="project-tags">
+              <div class="tag">CSS</div><div class="tag">UI</div><div class="tag">JavaScript</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project" data-video="/videos/project-05.mp4">
+          <video class="project-video" muted playsinline preload="metadata"></video>
+          <div class="project-fade"></div>
+          <div class="project-topbar">
+            <span>Project</span>
+            <span class="project-stage">Web App</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Space Blog</div>
+            <div class="project-desc">A concept Blog about space with Scroll controlled by depth, not by Y</div>
+            <div class="project-tags">
+              <div class="tag">Bootstrap</div><div class="tag">UX</div><div class="tag">Layout</div><div class="tag">JavaScript</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project" data-video="/videos/project-06.mp4">
+          <video class="project-video" muted playsinline preload="metadata"></video>
+          <div class="project-fade"></div>
+          <div class="project-topbar">
+            <span>Project</span>
+            <span class="project-stage">UI</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Barber</div>
+            <div class="project-desc">Website made for a barber located in Ravenna</div>
+            <div class="project-tags">
+              <div class="tag">UI</div><div class="tag">Frontend</div><div class="tag">CSS</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project" data-video="/videos/project-03.mp4">
+          <video class="project-video" muted playsinline preload="metadata"></video>
+          <div class="project-fade"></div>
+          <div class="project-topbar">
+            <span>Project</span>
+            <span class="project-stage">Motion</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title">UniShare functions</div>
+            <div class="project-desc">In-depth funcionts in UniShare website</div>
+            <div class="project-tags">
+              <div class="tag">SQL</div><div class="tag">UI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions" style="margin-top:18px;">
+        <a class="btn" href="#contact"><i class="fa-regular fa-paper-plane"></i> Let’s work together</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="kicker">Contact</div>
+      <h2>Contact me</h2>
+
+      <div class="contact-wrap">
+        <div class="card">
+          <div class="card-topbar">Message</div>
+          <div class="card-body">
+            <div class="card-title">Let’s talk</div>
+            <div class="card-desc">Tell me about your project — scope, style, and deadline.</div>
+
+            <div class="field">
+              <div class="label">Name</div>
+              <input id="contactName" type="text" placeholder="Your name" />
+            </div>
+
+            <div class="field">
+              <div class="label">Email</div>
+              <input id="contactEmail" type="email" placeholder="you@email.com" />
+            </div>
+
+            <div class="field">
+              <div class="label">Message</div>
+              <textarea id="contactMessage" placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <div class="actions" style="margin-top:10px;">
+              <button class="btn primary" type="button" id="sendBtn">
+                <i class="fa-regular fa-paper-plane"></i> Send
+              </button>
+            </div>
+          </div>
+
+          <hr class="card-divider" />
+          <div class="card-footer">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-topbar">Links</div>
+          <div class="card-body">
+            <div class="card-title">Quick links</div>
+
+            <div class="links-stack">
+              <a class="btn" href="https://github.com/MariusCeb"  target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/marius-ceban-7034191b5/"  target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a class="btn" href="mailto:cebanmarius15@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
+            </div>
+          </div>
+
+          <hr class="card-divider" />
+          <div class="card-footer">
+            <div class="card-meta"><i class="fa-solid fa-location-dot"></i> Italy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-topbar">
+      <div class="footer-badge">
+        <span class="dot"></span>
+        <span>Available for projects</span>
+      </div>
+
+      <div class="footer-mini">
+        <span class="mini-pill">UI</span>
+        <span class="mini-pill">Front-end</span>
+        <span class="mini-pill">Motion</span>
+      </div>
+    </div>
+
+    <div class="footer-body">
+      <div class="footer-brand">
+        <div class="footer-title">Marius Ceban</div>
+        <div class="footer-muted">
+          Web Developer & UI/UX-focused designer.<br/>
+          Clean layouts, responsive builds, and tasteful motion.
+        </div>
+
+        <div class="footer-actions">
+          <a class="footer-btn" href="#projects">
+            <i class="fa-solid fa-grid-2"></i> Projects
+          </a>
+          <a class="footer-btn primary" href="mailto:cebanmarius15@gmail.com">
+            <i class="fa-regular fa-paper-plane"></i> Email me
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-columns">
+        <div class="footer-col">
+          <div class="footer-col-title">Links</div>
+          <a class="footer-link" href="https://github.com/MariusCeb" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a class="footer-link" href="https://www.linkedin.com/in/marius-ceban-7034191b5/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a class="footer-link" href="#contact">
+            <i class="fa-regular fa-envelope"></i> Contact
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Details</div>
+          <div class="footer-kv"><span>Location</span><span>Italy</span></div>
+          <div class="footer-kv"><span>Focus</span><span>Web + UI/UX</span></div>
+          <div class="footer-kv"><span>Stack</span><span>JS • CSS • SQL</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Marius Ceban</div>
+      <div class="footer-sign">
+        Built with clean UI + a bit of motion <span class="spark">✦</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+  <!-- Your JS -->
+  <script type="module" src="/script.js"></script>
+
+
+</body>
+</html>
