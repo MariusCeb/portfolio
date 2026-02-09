@@ -428,6 +428,9 @@ h2{
   min-height: 230px;
   position: relative;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display:block;
+  text-decoration:none;
+  color:inherit;
 }
 .project:hover{
   transform: translateY(-6px);
